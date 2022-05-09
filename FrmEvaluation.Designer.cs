@@ -77,14 +77,15 @@
 			// 
 			this.cboActivities.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cboActivities.FormattingEnabled = true;
-			this.cboActivities.Location = new System.Drawing.Point(58, 60);
+			this.cboActivities.Location = new System.Drawing.Point(58, 50);
 			this.cboActivities.Name = "cboActivities";
 			this.cboActivities.Size = new System.Drawing.Size(183, 21);
 			this.cboActivities.TabIndex = 3;
+			this.cboActivities.SelectedIndexChanged += new System.EventHandler(this.cboActivities_SelectedIndexChanged);
 			// 
 			// txtMinForSignature
 			// 
-			this.txtMinForSignature.Location = new System.Drawing.Point(294, 60);
+			this.txtMinForSignature.Location = new System.Drawing.Point(294, 50);
 			this.txtMinForSignature.Name = "txtMinForSignature";
 			this.txtMinForSignature.ReadOnly = true;
 			this.txtMinForSignature.Size = new System.Drawing.Size(100, 20);
@@ -92,7 +93,7 @@
 			// 
 			// txtMinForGrade
 			// 
-			this.txtMinForGrade.Location = new System.Drawing.Point(467, 61);
+			this.txtMinForGrade.Location = new System.Drawing.Point(467, 51);
 			this.txtMinForGrade.Name = "txtMinForGrade";
 			this.txtMinForGrade.ReadOnly = true;
 			this.txtMinForGrade.Size = new System.Drawing.Size(100, 20);
@@ -173,6 +174,7 @@
 			this.btnCancel.TabIndex = 14;
 			this.btnCancel.Text = "Odustani";
 			this.btnCancel.UseVisualStyleBackColor = true;
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// FrmEvaluation
 			// 
@@ -196,6 +198,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "FrmEvaluation";
 			this.Text = "FrmEvaluation";
+			this.Load += new System.EventHandler(this.FrmEvaluation_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
