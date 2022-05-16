@@ -69,7 +69,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dgvStudents;
 		private System.Windows.Forms.Button btnEvaluateStudent;
 	}
